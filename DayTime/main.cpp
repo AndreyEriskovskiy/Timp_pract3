@@ -28,7 +28,7 @@ int main()
     strcpy(buf, "daytime\n");
     int msglen=strlen(buf);
 
-    int mySocket=socket(AF_INET, SOCK_DGRAM,0);
+    int mySocket=socket(AF_INET, SOCK_STREAM,0);
     if(mySocket==-1)
         errHandler("Error opening socket", 11);
 
